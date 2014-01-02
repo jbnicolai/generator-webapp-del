@@ -1,0 +1,15 @@
+@import "compass/css3";
+@import "compass/reset";
+
+/** typography **/
+$font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+$font-family-sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-alt: Arial, Verdana, sans-serif;
+$font-family-body: $font-family-sans;
+$font-size-base: 16px;
+$font-weight-base: 300;
+
+/** colors **/
+$color-text-default: #444;
+$color-background-default: #fff;
+

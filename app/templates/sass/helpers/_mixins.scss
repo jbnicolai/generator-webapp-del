@@ -1,0 +1,19 @@
+@mixin percentMargin($margins) {
+	$percentValues: null;
+	@each $margin in $margins {
+		$value: 0;
+		@if $margin != 0 {
+			$value: getPercentOfFull($margin);
+		}
+		$percentValues: append($percentValues, $value);
+	}
+	margin: $percentValues;
+}
+
+@mixin percentWidth($width) {
+	width: getPercentOfFull($width);
+}
+
+@mixin percentHeight($height) {
+	height: getPercentOfFull($height);
+}

@@ -1,0 +1,11 @@
+@function getRelativeValue($actual, $relative) {
+    @return #{($actual/$relative)};
+}
+
+@function relativeEms($actual, $relative: $font-size-base) {
+	@return #{getRelativeValue($actual, $relative)}em;
+}
+
+@function getPercentOfFull($value) {
+	@return percentage($value/$media-full);
+}

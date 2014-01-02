@@ -1,0 +1,52 @@
+//*************
+//	This is the master css file.
+//	It contains all the default framework css
+//*************
+
+//****** Base Config File *********//
+@import "base";
+
+//****** Vendor Libraries *********//
+@import "vendor/**/*";
+
+//****** Helpers *********//
+@import "helpers/**/*";
+
+//****** UI Elements *********//
+@import "typography/functions",
+		"typography/mixins",
+		"typography/extends",
+		"typography/fonts",
+		"typography",
+		"layout",
+        "theme";
+
+//****** Modules *********//
+@import "modules/*";
+
+
+//*************************
+//  REMOVE FOLLOWING CSS
+//*************************
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}

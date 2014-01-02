@@ -1,0 +1,29 @@
+$font-fallback-type: "%";
+
+@mixin type($font-family:$font-family-body, $font-size:$font-size-base, $weight:$font-weight-base, $line-height: 1) {
+	font: $weight #{$font-size}/#{$line-height} $font-family;
+	// font-style: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+@mixin type-body($ff:$font-family-body, $w:$font-weight-base, $line-height: 1) {
+	@include type($ff, $font-size-base, $w);
+}
+
+@mixin type-mono {
+	@include type($font-family-mono);
+}
+
+@mixin fontSize($actual, $relative: $font-size-base) {
+	@if $font-fallback-type == "%" {
+		font-size: getRelativeFontSize($actual, $relative, $font-fallback-type);
+	} @else {
+		font-size: $actual;
+	}
+	font-size: getRelativeFontSize($actual, $relative, "rem");
+}
+
+@mixin lineHeight($actual, $relative: $font-size-base) {
+	line-height: getRelativeLineHeight($actual, $relative);
+}

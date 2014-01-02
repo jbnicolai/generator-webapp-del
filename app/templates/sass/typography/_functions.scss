@@ -1,0 +1,11 @@
+@function getRelativeFontSize($actual, $relative, $unitType) {
+	@if $unitType == "rem" {
+		@return #{($actual/$font-size-base)}rem;
+	} @else {
+		@return ceil(percentage($actual/$relative));
+	}
+}
+
+@function getRelativeLineHeight($actual, $relative) {
+    @return $actual/$relative;
+}
