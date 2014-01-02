@@ -135,7 +135,7 @@ module.exports = function (grunt) {
         compass: {
             options: {
                 require: ['sass-globbing'],
-                sassDir: '<%= yeoman.app %>/styles/sass',
+                sassDir: '<%%= yeoman.app %>/styles/sass',
                 cssDir: '.tmp/styles',
                 generatedImagesDir: '.tmp/images/generated',
                 imagesDir: '<%%= yeoman.app %>/images',
