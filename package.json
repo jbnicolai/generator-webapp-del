@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "Scaffold out a webapp with stuff I like to use.",
   "license": "BSD",
-  "repository": "https://github.com/evild70/generator-webapp-del",
+  "homepage": "https://github.com/evild70/generator-webapp-del",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evild70/generator-webapp-del.git"
+  },
   "author": "Dennis Lahay",
   "main": "app/index.js",
   "engines": {
