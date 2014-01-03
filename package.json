@@ -1,6 +1,6 @@
 {
   "name": "generator-webapp-del",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Scaffold out a webapp with stuff I like to use.",
   "license": "BSD",
   "homepage": "https://github.com/evild70/generator-webapp-del",
@@ -22,7 +22,11 @@
   ],
   "keywords": [
     "evild70",
-    "webapp"
+    "webapp",
+    "web",
+    "app",
+    "h5bp",
+    "del"
   ],
   "dependencies": {
     "yeoman-generator": "~0.14.0",
