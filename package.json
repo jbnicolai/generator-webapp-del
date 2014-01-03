@@ -21,7 +21,8 @@
     "app"
   ],
   "keywords": [
-    "evild70"
+    "evild70",
+    "webapp"
   ],
   "dependencies": {
     "yeoman-generator": "~0.14.0",
