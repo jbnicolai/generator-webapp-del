@@ -7,6 +7,9 @@ Yeoman generator that scaffolds out a front-end web app with stuff I like to use
 
 * Most things copied from generator-webapp
 
+## Prereqs
+
+* [Sass Globbing](https://github.com/chriseppstein/sass-globbing) `gem install sass-globbing`
 
 ## Getting Started
 
