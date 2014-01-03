@@ -116,7 +116,6 @@ WebappDelGenerator.prototype.h5bp = function h5bp() {
   this.copy('404.html', 'app/404.html');
   this.copy('robots.txt', 'app/robots.txt');
   this.copy('htaccess', 'app/.htaccess');
-  this.copy('plugins.js', 'app/scripts/plugins.js');
 };
 
 WebappDelGenerator.prototype.mainStylesheet = function mainStylesheet() {
@@ -126,7 +125,7 @@ WebappDelGenerator.prototype.mainStylesheet = function mainStylesheet() {
 };
 
 WebappDelGenerator.prototype.writeIndex = function writeIndex() {
-  var bs;
+  // var bs;
 
   this.indexFile = this.readFileAsString(path.join(this.sourceRoot(), 'index.html'));
   this.indexFile = this.engine(this.indexFile, this);
@@ -175,6 +174,7 @@ WebappDelGenerator.prototype.app = function app() {
   // else {
     this.write('app/scripts/main.js', 'console.log(\'\\\'Allo \\\'Allo!\');');
   // }
+  this.copy('plugins.js', 'app/scripts/plugins.js');
 };
 
 WebappDelGenerator.prototype.install = function () {
