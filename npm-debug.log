@@ -1,0 +1,193 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.2
+3 info using node@v0.10.13
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/dlahay/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz
+12 verbose folder .
+13 info prepublish generator-webapp-del@0.1.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/dlahay/.npm/1f1177db-tar.lock
+16 silly lockFile f303128c-29283-0-7913948174100369-tmp-tgz tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz
+17 verbose lock tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz /Users/dlahay/.npm/f303128c-29283-0-7913948174100369-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile f303128c-29283-0-7913948174100369-tmp-tgz tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz
+21 silly lockFile f303128c-29283-0-7913948174100369-tmp-tgz tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz
+22 verbose tar unpack /var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz
+23 silly lockFile 2d895e49-29283-0-7913948174100369-package tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package
+24 verbose lock tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package /Users/dlahay/.npm/2d895e49-29283-0-7913948174100369-package.lock
+25 silly lockFile f303128c-29283-0-7913948174100369-tmp-tgz tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz
+26 verbose lock tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz /Users/dlahay/.npm/f303128c-29283-0-7913948174100369-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry app/index.js
+30 silly gunzTarPerm extractEntry app/USAGE
+31 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+32 silly gunzTarPerm extractEntry app/templates/plugins.js
+33 silly gunzTarPerm extractEntry app/templates/gitignore
+34 silly gunzTarPerm extractEntry app/templates/_package.json
+35 silly gunzTarPerm extractEntry app/templates/bowerrc
+36 silly gunzTarPerm extractEntry app/templates/editorconfig
+37 silly gunzTarPerm extractEntry app/templates/favicon.ico
+38 silly gunzTarPerm extractEntry app/templates/gitattributes
+39 silly gunzTarPerm extractEntry app/templates/404.html
+40 silly gunzTarPerm extractEntry app/templates/htaccess
+41 silly gunzTarPerm extractEntry app/templates/index.html
+42 silly gunzTarPerm extractEntry app/templates/jshintrc
+43 silly gunzTarPerm extractEntry app/templates/master.css
+44 silly gunzTarPerm extractEntry app/templates/master.scss
+45 silly gunzTarPerm extractEntry app/templates/_bower.json
+46 silly gunzTarPerm extractEntry app/templates/robots.txt
+47 silly gunzTarPerm extractEntry app/templates/sass/_base.scss
+48 silly gunzTarPerm extractEntry app/templates/sass/_layout.scss
+49 silly gunzTarPerm extractEntry app/templates/sass/_theme.scss
+50 silly gunzTarPerm extractEntry app/templates/sass/_typography.scss
+51 silly gunzTarPerm extractEntry app/templates/sass/helpers/_extends.scss
+52 silly gunzTarPerm extractEntry app/templates/sass/helpers/_functions.scss
+53 silly gunzTarPerm extractEntry app/templates/sass/helpers/_mixins.scss
+54 silly gunzTarPerm extractEntry app/templates/sass/master.scss
+55 silly gunzTarPerm extractEntry app/templates/sass/modules/_mymodule.scss
+56 silly gunzTarPerm extractEntry app/templates/sass/typography/_extends.scss
+57 silly gunzTarPerm extractEntry app/templates/sass/typography/_fonts.scss
+58 silly gunzTarPerm extractEntry app/templates/sass/typography/_functions.scss
+59 silly gunzTarPerm extractEntry app/templates/sass/typography/_mixins.scss
+60 silly gunzTarPerm extractEntry readme.md
+61 silly lockFile 2d895e49-29283-0-7913948174100369-package tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package
+62 silly lockFile 2d895e49-29283-0-7913948174100369-package tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package
+63 silly lockFile f303128c-29283-0-7913948174100369-tmp-tgz tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz
+64 silly lockFile f303128c-29283-0-7913948174100369-tmp-tgz tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/tmp.tgz
+65 verbose tar pack [ '/Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz',
+65 verbose tar pack   '/var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package' ]
+66 verbose tarball /Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz
+67 verbose folder /var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package
+68 silly lockFile 2d895e49-29283-0-7913948174100369-package tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package
+69 verbose lock tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package /Users/dlahay/.npm/2d895e49-29283-0-7913948174100369-package.lock
+70 silly lockFile c68301f1-tor-webapp-del-0-1-0-package-tgz tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz
+71 verbose lock tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz /Users/dlahay/.npm/c68301f1-tor-webapp-del-0-1-0-package-tgz.lock
+72 silly lockFile 2d895e49-29283-0-7913948174100369-package tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package
+73 silly lockFile 2d895e49-29283-0-7913948174100369-package tar:///var/folders/zq/j5dnzf0d0v1b6k4rf3d5vtk9yy4npq/T/npm-11267/1388762929283-0.7913948174100369/package
+74 silly lockFile c68301f1-tor-webapp-del-0-1-0-package-tgz tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz
+75 silly lockFile c68301f1-tor-webapp-del-0-1-0-package-tgz tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz
+76 silly lockFile dabe3ff6-nerator-webapp-del-0-1-0-package /Users/dlahay/.npm/generator-webapp-del/0.1.0/package
+77 verbose lock /Users/dlahay/.npm/generator-webapp-del/0.1.0/package /Users/dlahay/.npm/dabe3ff6-nerator-webapp-del-0-1-0-package.lock
+78 silly lockFile dabe3ff6-nerator-webapp-del-0-1-0-package /Users/dlahay/.npm/generator-webapp-del/0.1.0/package
+79 silly lockFile dabe3ff6-nerator-webapp-del-0-1-0-package /Users/dlahay/.npm/generator-webapp-del/0.1.0/package
+80 verbose tar unpack /Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz
+81 silly lockFile 1b3a31ce-nerator-webapp-del-0-1-0-package tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package
+82 verbose lock tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package /Users/dlahay/.npm/1b3a31ce-nerator-webapp-del-0-1-0-package.lock
+83 silly lockFile c68301f1-tor-webapp-del-0-1-0-package-tgz tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz
+84 verbose lock tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz /Users/dlahay/.npm/c68301f1-tor-webapp-del-0-1-0-package-tgz.lock
+85 silly gunzTarPerm modes [ '755', '644' ]
+86 silly gunzTarPerm extractEntry package.json
+87 silly gunzTarPerm extractEntry app/index.js
+88 silly gunzTarPerm extractEntry app/USAGE
+89 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+90 silly gunzTarPerm extractEntry app/templates/plugins.js
+91 silly gunzTarPerm extractEntry app/templates/gitignore
+92 silly gunzTarPerm extractEntry app/templates/_package.json
+93 silly gunzTarPerm extractEntry app/templates/bowerrc
+94 silly gunzTarPerm extractEntry app/templates/editorconfig
+95 silly gunzTarPerm extractEntry app/templates/favicon.ico
+96 silly gunzTarPerm extractEntry app/templates/gitattributes
+97 silly gunzTarPerm extractEntry app/templates/404.html
+98 silly gunzTarPerm extractEntry app/templates/htaccess
+99 silly gunzTarPerm extractEntry app/templates/index.html
+100 silly gunzTarPerm extractEntry app/templates/jshintrc
+101 silly gunzTarPerm extractEntry app/templates/master.css
+102 silly gunzTarPerm extractEntry app/templates/master.scss
+103 silly gunzTarPerm extractEntry app/templates/_bower.json
+104 silly gunzTarPerm extractEntry app/templates/robots.txt
+105 silly gunzTarPerm extractEntry app/templates/sass/_base.scss
+106 silly gunzTarPerm extractEntry app/templates/sass/_layout.scss
+107 silly gunzTarPerm extractEntry app/templates/sass/_theme.scss
+108 silly gunzTarPerm extractEntry app/templates/sass/_typography.scss
+109 silly gunzTarPerm extractEntry app/templates/sass/helpers/_extends.scss
+110 silly gunzTarPerm extractEntry app/templates/sass/helpers/_functions.scss
+111 silly gunzTarPerm extractEntry app/templates/sass/helpers/_mixins.scss
+112 silly gunzTarPerm extractEntry app/templates/sass/master.scss
+113 silly gunzTarPerm extractEntry app/templates/sass/modules/_mymodule.scss
+114 silly gunzTarPerm extractEntry app/templates/sass/typography/_extends.scss
+115 silly gunzTarPerm extractEntry app/templates/sass/typography/_fonts.scss
+116 silly gunzTarPerm extractEntry app/templates/sass/typography/_functions.scss
+117 silly gunzTarPerm extractEntry app/templates/sass/typography/_mixins.scss
+118 silly gunzTarPerm extractEntry readme.md
+119 silly lockFile 1b3a31ce-nerator-webapp-del-0-1-0-package tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package
+120 silly lockFile 1b3a31ce-nerator-webapp-del-0-1-0-package tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package
+121 silly lockFile c68301f1-tor-webapp-del-0-1-0-package-tgz tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz
+122 silly lockFile c68301f1-tor-webapp-del-0-1-0-package-tgz tar:///Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz
+123 verbose chmod /Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz 644
+124 verbose chown /Users/dlahay/.npm/generator-webapp-del/0.1.0/package.tgz [ 2111985367, 153467133 ]
+125 silly lockFile 3a52ce78- .
+126 silly lockFile 3a52ce78- .
+127 silly publish { name: 'generator-webapp-del',
+127 silly publish   version: '0.1.0',
+127 silly publish   description: 'Scaffold out a webapp with stuff I like to use.',
+127 silly publish   license: 'BSD',
+127 silly publish   homepage: 'https://github.com/evild70/generator-webapp-del',
+127 silly publish   repository:
+127 silly publish    { type: 'git',
+127 silly publish      url: 'https://github.com/evild70/generator-webapp-del.git' },
+127 silly publish   author: { name: 'Dennis Lahay' },
+127 silly publish   main: 'app/index.js',
+127 silly publish   engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+127 silly publish   scripts: { test: 'mocha --reporter spec' },
+127 silly publish   files: [ 'app' ],
+127 silly publish   keywords: [ 'evild70' ],
+127 silly publish   dependencies:
+127 silly publish    { 'yeoman-generator': '~0.14.0',
+127 silly publish      cheerio: '~0.12.0',
+127 silly publish      chalk: '~0.4.0' },
+127 silly publish   peerDependencies: { yo: '>=1.0.0', 'generator-mocha': '>=0.1.0' },
+127 silly publish   devDependencies: { mocha: '*' },
+127 silly publish   readme: '# Customized Web app generator [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)\n\nYeoman generator that scaffolds out a front-end web app with stuff I like to use.\n\n\n## Features\n\n* Most things copied from generator-webapp\n\n\n## Getting Started\n\n- Install: `npm install -g generator-webapp-del`\n- Run: `yo webapp-del`\n- Run `grunt` for building and `grunt serve` for preview [*](#serve-note)\n\n\n#### Third-Party Dependencies\n\n*(HTML/CSS/JS/Images/etc)*\n\nThird-party dependencies are managed with [bower-install](https://github.com/stephenplusplus/grunt-bower-install). Add new dependencies using **Bower** and then run the **Grunt** task to load them:\n\n```bash\n  bower install --save jquery\n  grunt bower-install\n```\n\nThis works if the package author has followed the [Bower spec](https://github.com/bower/bower.json-spec). If the files are not automatically added to your index.html, check with the package\'s repo for support and/or file an issue with them to have it updated.\n\nTo manually add dependencies, `bower install depName --save` to get the files, then add a `script` or `style` tag to your `index.html` or an other appropriate place.\n\n\n#### Grunt Serve Note\n\nNote: `grunt server` was previously used for previewing in earlier versions of the project and is being deprecated in favor of `grunt serve`.\n\n\n## Options\n\n* `--skip-install`\n\n  Skips the automatic execution of `bower` and `npm` after scaffolding has finished.\n\n* `--test-framework=<framework>`\n\n  Defaults to `mocha`. Can be switched for another supported testing framework like `jasmine`.\n\n\n\n## License\n\n[BSD license](http://opensource.org/licenses/bsd-license.php)\n',
+127 silly publish   readmeFilename: 'readme.md',
+127 silly publish   bugs: { url: 'https://github.com/evild70/generator-webapp-del/issues' },
+127 silly publish   _id: 'generator-webapp-del@0.1.0',
+127 silly publish   dist: { shasum: '7a3911eee984186ed4973f53603444dcdd5b88c8' },
+127 silly publish   _from: '.' }
+128 verbose url raw generator-webapp-del
+129 verbose url resolving [ 'https://registry.npmjs.org/', './generator-webapp-del' ]
+130 verbose url resolved https://registry.npmjs.org/generator-webapp-del
+131 info trying registry request attempt 1 at 09:28:50
+132 http PUT https://registry.npmjs.org/generator-webapp-del
+133 http 409 https://registry.npmjs.org/generator-webapp-del
+134 verbose url raw generator-webapp-del
+135 verbose url resolving [ 'https://registry.npmjs.org/', './generator-webapp-del' ]
+136 verbose url resolved https://registry.npmjs.org/generator-webapp-del
+137 info trying registry request attempt 1 at 09:28:50
+138 http GET https://registry.npmjs.org/generator-webapp-del
+139 http 200 https://registry.npmjs.org/generator-webapp-del
+140 error publish fail Cannot publish over existing version.
+140 error publish fail Update the 'version' field in package.json and try again.
+140 error publish fail
+140 error publish fail If the previous version was published in error, see:
+140 error publish fail     npm help unpublish
+140 error publish fail
+140 error publish fail To automatically increment version numbers, see:
+140 error publish fail     npm help version
+141 error System Darwin 11.4.2
+142 error command "node" "/usr/local/bin/npm" "publish"
+143 error cwd /Users/dlahay/Documents/Workspaces/Yeoman/generator-webapp-del
+144 error node -v v0.10.13
+145 error npm -v 1.3.2
+146 error code EPUBLISHCONFLICT
+147 verbose exit [ 1, true ]
