@@ -134,6 +134,7 @@ WebappDelGenerator.prototype.writeIndex = function writeIndex() {
 
   this.indexFile = this.appendScripts(this.indexFile, 'scripts/plugins.js', [
     'scripts/plugins.js',
+    rspnd + 'respond.matchmedia.addListener.min.js',
     rspnd + 'respond.min.js']);
 
   this.indexFile = this.appendFiles({
