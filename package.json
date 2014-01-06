@@ -1,6 +1,6 @@
 {
   "name": "generator-webapp-del",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Scaffold out a webapp with stuff I like to use.",
   "license": "BSD",
   "homepage": "https://github.com/evild70/generator-webapp-del",
