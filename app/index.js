@@ -51,7 +51,7 @@ WebappDelGenerator.prototype.askForRespond = function askForRespond() {
   var prompts = [{
     type: 'confirm',
     name: 'includeRespond',
-    message: 'Include Respond.js for <IE8 ?',
+    message: 'Include Respond.js for <=IE8 ?',
     default: false
   }];
 
