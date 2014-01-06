@@ -74,7 +74,7 @@ WebappDelGenerator.prototype.askFor = function askFor() {
   var prompts = [{
     type: 'confirm',
     name: 'someOption',
-    message: 'Continue?',
+    message: 'Continue, yo!?',
     default: true
   }];
 
