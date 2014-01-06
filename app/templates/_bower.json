@@ -1,10 +1,11 @@
 {
   "name": "<%= _.slugify(appname) %>",
   "private": true,
-  "dependencies": {
+  "dependencies": {<% if (includeRespond) {
+    "respond": "~1.4.2",<% } %>
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
-    "respond": "~1.4.2"
+
   },
   "devDependencies": {}
 }
