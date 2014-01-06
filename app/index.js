@@ -34,7 +34,7 @@ var WebappDelGenerator = module.exports = function WebappDelGenerator(args, opti
 
 util.inherits(WebappDelGenerator, yeoman.generators.Base);
 
-WebappDelGenerator.prototype.welcome = function askFor() {
+WebappDelGenerator.prototype.welcome = function welcome() {
 
   // welcome message
   if (!this.options['skip-welcome-message']) {
@@ -45,7 +45,7 @@ WebappDelGenerator.prototype.welcome = function askFor() {
 
 };
 
-WebappDelGenerator.prototype.askForRespond = function askFor() {
+WebappDelGenerator.prototype.askForRespond = function askForRespond() {
   var cb = this.async();
 
   var prompts = [{
@@ -57,6 +57,7 @@ WebappDelGenerator.prototype.askForRespond = function askFor() {
 
   this.prompt(prompts, function (props) {
     this.includeRespond = props.includeRespond;
+
     cb();
   }.bind(this));
 };
@@ -139,15 +140,15 @@ WebappDelGenerator.prototype.app = function app() {
     this.copy('plugins.js', 'app/scripts/plugins.js');
 };
 
-// WebappDelGenerator.prototype.install = function () {
-//   if (this.options['skip-install']) {
-//     return;
-//   }
+WebappDelGenerator.prototype.install = function () {
+  if (this.options['skip-install']) {
+    return;
+  }
 
-//   var done = this.async();
-//   this.installDependencies({
-//     skipMessage: this.options['skip-install-message'],
-//     skipInstall: this.options['skip-install'],
-//     callback: done
-//   });
-// };
+  var done = this.async();
+  this.installDependencies({
+    skipMessage: this.options['skip-install-message'],
+    skipInstall: this.options['skip-install'],
+    callback: done
+  });
+};
