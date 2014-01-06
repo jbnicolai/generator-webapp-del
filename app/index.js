@@ -40,7 +40,7 @@ WebappDelGenerator.prototype.askFor = function askFor() {
   // welcome message
   if (!this.options['skip-welcome-message']) {
     console.log(this.yeoman);
-    console.log(chalk.magenta('Out of the box I include HTML5 Boilerplate, jQuery, and a Gruntfile.js to build your app.'));
+    console.log(chalk.magenta('To start with: HTML5 Boilerplate, jQuery, and a Gruntfile.js to build your app.'));
   }
 
   // var prompts = [{
@@ -125,29 +125,16 @@ WebappDelGenerator.prototype.mainStylesheet = function mainStylesheet() {
 };
 
 WebappDelGenerator.prototype.writeIndex = function writeIndex() {
-  // var bs;
+  var rspnd;
 
   this.indexFile = this.readFileAsString(path.join(this.sourceRoot(), 'index.html'));
   this.indexFile = this.engine(this.indexFile, this);
 
-  // if (this.compassBootstrap) {
-  //   // wire Twitter Bootstrap plugins
-  //   bs = 'bower_components/sass-bootstrap/js/';
-  //   this.indexFile = this.appendScripts(this.indexFile, 'scripts/plugins.js', [
-  //     bs + 'affix.js',
-  //     bs + 'alert.js',
-  //     bs + 'dropdown.js',
-  //     bs + 'tooltip.js',
-  //     bs + 'modal.js',
-  //     bs + 'transition.js',
-  //     bs + 'button.js',
-  //     bs + 'popover.js',
-  //     bs + 'carousel.js',
-  //     bs + 'scrollspy.js',
-  //     bs + 'collapse.js',
-  //     bs + 'tab.js'
-  //   ]);
-  // }
+  rspnd = 'bower_components/respond/dest/';
+
+  this.indexFile = this.appendScripts(this.indexFile, 'scripts/plugins.js', [
+    'scripts/plugins.js',
+    rspnd + 'respond.min.js']);
 
   this.indexFile = this.appendFiles({
     html: this.indexFile,
@@ -165,15 +152,8 @@ WebappDelGenerator.prototype.app = function app() {
   this.mkdir('app/images');
   this.write('app/index.html', this.indexFile);
 
-  // if (this.coffee) {
-  //   this.write(
-  //     'app/scripts/main.coffee',
-  //     'console.log "\'Allo from CoffeeScript!"'
-  //   );
-  // }
-  // else {
-    this.write('app/scripts/main.js', 'console.log(\'\\\'Allo \\\'Allo!\');');
-  // }
+  this.write('app/scripts/main.js', 'console.log(\'\\\'Allo \\\'Allo!\');');
+
   this.copy('plugins.js', 'app/scripts/plugins.js');
 };
 
