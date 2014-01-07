@@ -7,7 +7,10 @@ Yeoman generator that scaffolds out a front-end web app with stuff I like to use
 
 ## Features
 
-* Most things copied from generator-webapp
+* Most things copied from [generator-webapp](https://github.com/yeoman/generator-webapp) (Thanks to everyone involved in managing that generator.)
+* Optional: [Respond.js](https://github.com/scottjehl/Respond)
+* Optional: [Swiper](http://www.idangero.us/sliders/swiper/)
+* Optional: [Fancybox](http://fancyapps.com/fancybox/)
 
 ## Prereqs
 
