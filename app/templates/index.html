@@ -17,6 +17,12 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/master.css">
         <!-- endbuild -->
+
+        <!-- build:css styles/components.css -->
+        <% if (includeSwiper) { %><link rel="stylesheet" href="bower_components/swiper/dev/idangerous.swiper.css"><% } %>
+        <% if (includeFancybox) { %><link rel="stylesheet" href="bower_components/fancybox//source/jquery.fancybox.css"><% } %>
+        <!-- endbuild -->
+
         <script src="bower_components/modernizr/modernizr.js"></script>
     </head>
     <body>
@@ -27,6 +33,9 @@
           <ul>
             <li>HTML5 Boilerplate</li>
             <li>Modernizr</li>
+            <% if (includeSwiper) { %><li>Swiper</li><% } %>
+            <% if (includeFancybox) { %><li>Fancybox</li><% } %>
+            <% if (includeRespond) { %><li>Respond.js</li><% } %>
           </ul>
         </div>
 
