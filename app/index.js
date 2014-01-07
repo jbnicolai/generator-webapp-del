@@ -36,30 +36,63 @@ util.inherits(WebappDelGenerator, yeoman.generators.Base);
 
 WebappDelGenerator.prototype.welcome = function welcome() {
 
-  // welcome message
-  if (!this.options['skip-welcome-message']) {
-    console.log(this.yeoman);
-    console.log(chalk.yellow('This is webapp-del. Thanks for giving it a try.'))
-    console.log(chalk.magenta('To start with: HTML5 Boilerplate, jQuery, and a Gruntfile.js to build your app.'));
-  }
+    // welcome message
+    if (!this.options['skip-welcome-message']) {
+        console.log(this.yeoman);
+        console.log(chalk.yellow('This is webapp-del. Thanks for giving it a try.'))
+        console.log(chalk.magenta('To start with: HTML5 Boilerplate, jQuery, and a Gruntfile.js to build your app.'));
+    }
 
 };
 
-WebappDelGenerator.prototype.askForRespond = function askForRespond() {
-  var cb = this.async();
+WebappDelGenerator.prototype.askFor = function askFor() {
+    var cb = this.async();
 
-  var prompts = [{
-    type: 'confirm',
-    name: 'includeRespond',
-    message: 'Include Respond.js for <=IE8 ?',
-    default: false
-  }];
+  // var prompts = [{
+  //   type: 'confirm',
+  //   name: 'includeRespond',
+  //   message: 'Include Respond.js for <=IE8 ?',
+  //   default: false
+  // }];
 
-  this.prompt(prompts, function (props) {
-    this.includeRespond = props.includeRespond;
+  // this.prompt(prompts, function (props) {
+  //   this.includeRespond = props.includeRespond;
 
-    cb();
-  }.bind(this));
+  //   cb();
+  // }.bind(this));
+
+    var prompts = [{
+        type: 'checkbox',
+        name: 'features',
+        message: 'Choose some extras (<space> to deselect/select): ',
+        choices: [{
+          name: 'Respond.js',
+          value: 'includeRespond',
+          checked: true
+      }, {
+          name: 'Fancybox',
+          value: 'includeFancybox',
+          checked: true
+      }, {
+          name: 'Swiper',
+          value: 'includeSwiper',
+          checked: true
+      }]
+    }];
+
+    this.prompt(prompts, function (answers) {
+        var features = answers.features;
+
+        function hasFeature(feat) { return features.indexOf(feat) !== -1; }
+
+        // manually deal with the response, get back and store the results.
+        // we change a bit this way of doing to automatically do this in the self.prompt() method.
+        this.includeRespond = hasFeature('includeRespond');
+        this.includeFancybox = hasFeature('includeFancybox');
+        this.includeSwiper = hasFeature('includeSwiper');
+
+        cb();
+    }.bind(this));
 };
 
 WebappDelGenerator.prototype.gruntfile = function gruntfile() {
@@ -104,7 +137,9 @@ WebappDelGenerator.prototype.mainStylesheet = function mainStylesheet() {
 WebappDelGenerator.prototype.writeIndex = function writeIndex() {
     var sourceFileList = ['bower_components/jquery/jquery.js'],
         dflt = ['scripts/plugins.js', 'scripts/main.js'],
-        rspnd = [];
+        rspnd = [],
+        fncybx = [],
+        swpr = [];
 
     this.indexFile = this.readFileAsString(path.join(this.sourceRoot(), 'index.html'));
     this.indexFile = this.engine(this.indexFile, this);
@@ -115,8 +150,18 @@ WebappDelGenerator.prototype.writeIndex = function writeIndex() {
         'bower_components/respond/dest/respond.min.js'];
     }
 
+    // Include Fancybox?
+    if (this.includeFancybox) {
+        fncybx = ['bower_components/fancybox/source/jquery.fancybox.pack.js'];
+    }
+
+    // Include Swiper?
+    if (this.includeSwiper) {
+        swpr = ['bower_components/swiper/dev/idangerous.swiper.js'];
+    }
+
     // concat scripts
-    sourceFileList = sourceFileList.concat(rspnd, dflt);
+    sourceFileList = sourceFileList.concat(rspnd, fncybx, swpr, dflt);
 
     this.indexFile = this.appendFiles({
         html: this.indexFile,
