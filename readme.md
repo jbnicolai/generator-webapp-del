@@ -1,3 +1,5 @@
+> **ALERT:*** This generator is always changing.
+
 # Customized Web app generator [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Yeoman generator that scaffolds out a front-end web app with stuff I like to use.
