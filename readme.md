@@ -1,4 +1,4 @@
-> **ALERT:*** This generator is always changing.
+> **ALERT:** This generator is always changing.
 
 # Customized Web app generator [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
