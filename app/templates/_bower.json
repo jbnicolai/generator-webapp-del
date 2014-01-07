@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "dependencies": {
     "jquery": "~1.10.2",<% if (includeRespond) { %>
-    "respond": "~1.4.2",<% } %>
+    "respond": "~1.4.2",<% } %><% if (includeFancybox) { %>
+    "fancybox": "~2.1.5",<% } %><% if (includeSwiper) { %>
+    "swiper": "~2.4.1",<% } %>
     "modernizr": "~2.6.2"
   },
   "devDependencies": {}
